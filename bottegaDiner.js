@@ -17,7 +17,7 @@ if (total == 0){
   else if (time >= 900 && time <= 1200) {
     alert("Thank you for choosing Bottega Diner! \n Morning menu \n Toast and coffee - 2\u20AC \n Toast and tea - 2\u20AC \n ColaCao and biscuits - 3\u20AC \n Coffee and eggs with beacon - 6\u20AC");
     
-    let breakfast = prompt("Good morning, what will you have? \n Toast and coffee \n Toast and tea \n ColaCao and biscuits \n Coffe and eggs with beacon");
+    let breakfast = prompt("Good morning, what will you have? \n Toast and coffee \n Toast and tea \n ColaCao and biscuits \n Coffee and eggs with beacon");
     
     function breakfastPrice() {
       if (breakfast != null) {
