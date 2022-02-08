@@ -1,5 +1,4 @@
 var total = 0;
-var confirmation
 var time = Math.floor(Math.random() * 2400);
 const commentVault = [", great choice. ", ", I like it a lot. ", ", eh? You'll love it. ", ", remember to eat is slowly. ", ", perfect. ", ", okay then. ", ", gotcha. ", ", good. It'll be here in no time. ", ", of course. ", ", the chef's favourite, great! ", ", hm, got it. ", ", okay. "];
 const bfCommentVault = [" Have a great day.", " Have a nice morning.", " Enjoy it.", " I'll bring it right now.", " Perfect, tell me if you need anything else.", " Here, a little chocolate on the house if you want it."];
@@ -12,9 +11,8 @@ commentRandom = () => {
 }
 if (total == 0){
   
-  if (time > 2200 && time < 900) {
+  if (time > 2200 || time < 900) {
     alert("We are closed right now. We open from 9 AM to 10 PM");
-    confirmation = false;
   }
   else if (time >= 900 && time <= 1200) {
     alert("Thank you for choosing Bottega Diner! \n Morning menu \n Toast and coffee - 2\u20AC \n Toast and tea - 2\u20AC \n ColaCao and biscuits - 3\u20AC \n Coffee and eggs with beacon - 6\u20AC");
@@ -305,7 +303,7 @@ if (total == 0){
     }
     side2Price();
   }
-  if (confirmation == false) {
+  if (total == 0) {
     alert("See you soon.");
   }
   else {
