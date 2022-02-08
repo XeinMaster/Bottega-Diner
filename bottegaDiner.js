@@ -15,9 +15,9 @@ if (total == 0){
     alert("We are closed right now. We open from 9 AM to 10 PM");
   }
   else if (time >= 900 && time <= 1200) {
-    alert("Thank you for choosing Bottega Diner! \n Morning menu \n Toast and coffee - 2\u20AC \n Toast and tea - 2\u20AC \n ColaCao and biscuits - 3\u20AC \n Coffee and eggs with beacon - 6\u20AC");
+    alert("Thank you for choosing Bottega Diner! \n Morning menu \n Toast and coffee - 2\u20AC \n Toast and tea - 2\u20AC \n ColaCao and biscuits - 3\u20AC \n Coffee and eggs with bacon - 6\u20AC");
     
-    let breakfast = prompt("Good morning, what will you have? \n Toast and coffee \n Toast and tea \n ColaCao and biscuits \n Coffee and eggs with beacon");
+    let breakfast = prompt("Good morning, what will you have? \n Toast and coffee \n Toast and tea \n ColaCao and biscuits \n Coffee and eggs with bacon");
     
     function breakfastPrice() {
       if (breakfast != null) {
@@ -36,10 +36,10 @@ if (total == 0){
           commentRandom();
           alert("ColaCao and some biscuits, 3\u20AC." + bfComment);
         }
-        else if (breakfast == "Coffee and eggs with beacon") {
+        else if (breakfast == "Coffee and eggs with bacon") {
           total += 6;
           commentRandom();
-          alert("Okay, coffee and eggs with beacon, that's 6\u20AC." + bfComment);
+          alert("Okay, coffee and eggs with bacon, that's 6\u20AC." + bfComment);
         }
       }
     }
